@@ -9,6 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class setHome implements CommandExecutor{
+	
 	static HashMap<String, Object> map = new HashMap<String, Object>();
 	
 	/**

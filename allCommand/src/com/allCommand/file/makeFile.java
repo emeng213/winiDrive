@@ -16,6 +16,7 @@ import com.allCommand.allCommand;
 import net.md_5.bungee.api.ChatColor;
 
 public class makeFile {
+	
 public static allCommand plugin;
 	
 	//서버 > plugins의 플러그인안의 data.txt 파일을 선언하고 대입하는 과정 

@@ -7,6 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class goHome implements CommandExecutor{
+	
 	/**
 	 * 좌표 setHome
 	 * sender : 입력한 플레이어

@@ -12,6 +12,7 @@ import com.allCommand.allCommand;
 
 
 public class pluginEvent implements Listener{
+	
 	public static allCommand plugin;
 	public HashMap<UUID, Integer> map = new HashMap<UUID, Integer>();
 	

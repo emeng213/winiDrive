@@ -13,3 +13,4 @@ commands:
     description: goHome
     usage: /goHome
     aliases: [goHome]
+    
