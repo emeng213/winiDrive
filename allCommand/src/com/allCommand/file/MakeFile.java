@@ -11,18 +11,18 @@ import java.util.UUID;
 
 import org.bukkit.Bukkit;
 
-import com.allCommand.allCommand;
+import com.allCommand.AllCommand;
 
 import net.md_5.bungee.api.ChatColor;
 
-public class makeFile {
+public class MakeFile {
 	
-public static allCommand plugin;
+public static AllCommand plugin;
 	
 	//서버 > plugins의 플러그인안의 data.txt 파일을 선언하고 대입하는 과정 
-	public final File f = new File(plugin.getDataFolder(), "/data.txt");
+	public final static File f = new File(plugin.getDataFolder(), "/data.txt");
 		
-	public static void setPlugin(allCommand MainPlugin) {
+	public static void setPlugin(AllCommand MainPlugin) {
 		plugin = MainPlugin;
 	}
 	

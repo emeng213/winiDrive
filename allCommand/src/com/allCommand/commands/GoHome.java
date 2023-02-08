@@ -6,7 +6,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class goHome implements CommandExecutor{
+public class GoHome implements CommandExecutor{
 	
 	/**
 	 * 좌표 setHome
@@ -19,7 +19,7 @@ public class goHome implements CommandExecutor{
 	public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
 		Player player = (Player) sender;
 		
-		Location homeLocation = (Location) setHome.map.get("homeLocation");
+		Location homeLocation = (Location) SetHome.map.get("homeLocation");
 		
 		player.teleport(homeLocation);
 		

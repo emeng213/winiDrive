@@ -13,4 +13,7 @@ commands:
     description: goHome
     usage: /goHome
     aliases: [goHome]
-    
+  bank:
+    description: 현금 관리 커맨드
+    usage: /bank
+    aliases: [bank]

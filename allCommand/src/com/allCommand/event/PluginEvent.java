@@ -1,4 +1,4 @@
-package com.allCommand.plugin;
+package com.allCommand.event;
 
 import java.util.HashMap;
 import java.util.UUID;
@@ -8,15 +8,15 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import com.allCommand.allCommand;
+import com.allCommand.AllCommand;
 
 
-public class pluginEvent implements Listener{
+public class PluginEvent implements Listener{
 	
-	public static allCommand plugin;
+	public static AllCommand plugin;
 	public HashMap<UUID, Integer> map = new HashMap<UUID, Integer>();
 	
-	public static void setPlugin(allCommand MainPlugin) {
+	public static void setPlugin(AllCommand MainPlugin) {
 		plugin = MainPlugin;
 	}
 	
