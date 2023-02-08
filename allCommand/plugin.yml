@@ -1,0 +1,15 @@
+main : com.allCommand.allCommand
+name : plugin
+version : 1.0.0
+author : ceh
+description : 테스트
+
+commands:
+  setHome:
+    description: setHome
+    usage: /setHome
+    aliases: [setHome]
+  goHome:
+    description: goHome
+    usage: /goHome
+    aliases: [goHome]
