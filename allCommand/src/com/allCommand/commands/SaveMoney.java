@@ -7,6 +7,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
 import com.allCommand.file.MakeFile;
 
 public class SaveMoney implements CommandExecutor{
@@ -28,9 +29,8 @@ public class SaveMoney implements CommandExecutor{
 			player.sendMessage("현재 잔액은 " + cashMap.get(uuid) + "원입니다.");
 		}
 		
-		MakeFile.makeFile(MakeFile.f);
-		MakeFile.mapToFile(MakeFile.f, cashMap);
-		MakeFile.fileToMap(MakeFile.f, cashMap);
+		MakeFile.setFile(cashMap);
+		
 		
 		return false;
 	}

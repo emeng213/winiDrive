@@ -25,7 +25,7 @@ public class PluginEvent implements Listener{
 	 * @param e
 	 */
 	@EventHandler
-	public void join(PlayerJoinEvent e) {
+	public void onPlayerJoin(PlayerJoinEvent e) {
 		int count = 0;
 		UUID uuid = e.getPlayer().getUniqueId();
 		

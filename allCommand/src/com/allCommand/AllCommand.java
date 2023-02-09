@@ -8,6 +8,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.allCommand.commands.GoHome;
 import com.allCommand.commands.SaveMoney;
 import com.allCommand.commands.SetHome;
+import com.allCommand.event.DeathEvent;
+import com.allCommand.event.PlayerEventHandler;
 import com.allCommand.event.PluginEvent;
 import com.allCommand.file.MakeFile;
 
@@ -29,7 +31,9 @@ public class AllCommand extends JavaPlugin{
 		MakeFile.setPlugin(this);
 		
 		PluginEvent pluginEvent = new PluginEvent();
-		MakeFile makeFile = new MakeFile();
+		PlayerEventHandler playerEventHandler = new PlayerEventHandler();
+		DeathEvent deathEvent = new DeathEvent();
+//		MakeFile makeFile = new MakeFile();
 		
 		//해당 커맨드 사용한다는 의미
 		getCommand("setHome").setExecutor(new SetHome());
@@ -37,7 +41,8 @@ public class AllCommand extends JavaPlugin{
 		getCommand("bank").setExecutor(new SaveMoney());
 		
 		//서버의 플러그인 매니저에 이벤트 등록
-//		getServer().getPluginManager().registerEvents(pluginEvent, this);
+		getServer().getPluginManager().registerEvents(deathEvent, this);
+		getServer().getPluginManager().registerEvents(pluginEvent, this);
+		getServer().getPluginManager().registerEvents(playerEventHandler, this);
 	}
-	
 }
